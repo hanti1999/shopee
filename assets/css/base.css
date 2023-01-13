@@ -1,0 +1,35 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    /* Trick font size */
+    font-size: 62.5%; /* 100% = 16px */
+    /* Khi đặt font là 1rem = 10px */
+    line-height: 1.6rem; /* 1.6rem = 16px */
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 1200px; 
+    /* những màm hình có kích thước >=1200 thì kích thước class này là 1200 */
+    max-width: 100%; 
+    /* nhưng màn hình nhỏ hơn 1200 thì sẽ giảm kích thước = 100% màn hình */
+    margin: 0 auto;
+}
+
+.grid__full-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
