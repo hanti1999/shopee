@@ -16,49 +16,62 @@
         <header class="header">
             <div class="grid">
                 <nav class="header__navbar">
-                    <ul class="header__navbar-list">
-                        <li class="header__navbar-item">Kênh người bán</li>
+                    <div class="header__navbar-list">
+                        <a href="#" class="navbar__item">Kênh người bán</a>
                         <span class="separate"></span>
-                        <li class="header__navbar-item">Trở thành người bán Shopee</li>
+                        <a href="#" class="navbar__item">Trở thành người bán Shopee</a>
                         <span class="separate"></span>
-                        <li class="header__navbar-item">Tải ứng dụng</li>
+                        <div class="navbar__item navbar__item--show-qr">
+                            Tải ứng dụng
+                            <div class="navbar__qr">
+                                <img src="./assets/img/QRcode/qrcode.png" alt="" class="navbar__qr-img">
+                                <div class="navbar__qr-apps">
+                                    <a href="#" class="navbar__apps-link">
+                                        <img src="./assets/img/QRcode/appstore.png" alt="App Store" class="navbar__qr-apps-img">
+                                    </a>
+                                    <a href="#" class="navbar__apps-link">
+                                        <img src="./assets/img/QRcode/googleplay.png" alt="Google Play" class="navbar__qr-apps-img">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                         <span class="separate"></span>
-                        <li class="header__navbar-item">
-                            <span class="header__navbar-item--no-hover">Kết nối</span>
-                        </li>
-                        <li class="header__navbar-item" style="margin-left: 0px;">
-                            <a href="#" class="header__navbar-icon">
+                        <div class="navbar__item">
+                            <div class="navbar__item--no-hover">Kết nối</div>
+                        </div>
+                        <div class="navbar__item" style="margin-left: 0px;">
+                            <a href="#" class="navbar__icon">
                                 <i class="fa-brands fa-facebook"></i>
                             </a>
-                            <a href="#" class="header__navbar-icon">
+                            <a href="#" class="navbar__icon">
                                 <i class="fa-brands fa-instagram"></i>
                             </a>
-                        </li>
-                    </ul>
-                    <ul class="header__navbar-list">
-                        <li class="header__navbar-item">
-                            <a href="#" class="header__navbar-icon">
+                        </div>
+                    </div>
+                    <div class="header__navbar-list">
+                        <div class="navbar__item">
+                            <a href="#" class="navbar__icon">
                                 <i class="fa-regular fa-bell"></i>
                                 <span class="font-13 mar-0-4">Thông báo</span>
                             </a>
-                        </li>
-                        <li class="header__navbar-item">
-                            <a href="#" class="header__navbar-icon">
+                        </div>
+                        <div class="navbar__item">
+                            <a href="#" class="navbar__icon">
                                 <i class="fa-regular fa-circle-question"></i>
                                 <span class="font-13 mar-0-4">Hỗ trợ</span>
                             </a>
-                        </li>
-                        <div class="header__navbar-item">
-                            <li class="header__navbar-icon">
+                        </div>
+                        <div class="navbar__item">
+                            <div class="navbar__icon">
                                 <i class="fa-solid fa-globe"></i>
                                 <span class="font-13 mar-0-4">Tiếng Việt</span>
                                 <i class="fa-solid fa-angle-down"></i>
-                            </li>
+                            </div>
                         </div>
-                        <li class="header__navbar-item header__navbar-item--strong">Đăng ký</li>
+                        <div class="navbar__item navbar__item--strong">Đăng ký</div>
                         <span class="separate"></span>
-                        <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li>
-                    </ul>
+                        <div class="navbar__item navbar__item--strong">Đăng nhập</div>
+                    </div>
                 </nav>
             </div>
         </header>
