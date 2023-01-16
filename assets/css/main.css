@@ -90,6 +90,7 @@
     border-radius: 0.2rem;
     display: none;
     animation: fadeIn ease-in .3s;
+    cursor: default;
 }
 
 .navbar__qr::before {
@@ -121,11 +122,11 @@
     height: 1.6rem;
 }
 
-.navbar__apps-link:first-child {
+.navbar__apps:first-child {
     margin-left: 1.1rem;
 }
 
-.navbar__apps-link:nth-child(2) {
+.navbar__apps:nth-child(2) {
     margin-right: 0.9rem;
 }
 /* === End navbar QR code */
