@@ -49,6 +49,14 @@
     margin: 0px 2px;
 }
 
+.navbar__icon--small {
+    font-size: 1.4rem;
+}
+
+.navbar__item--no-margin {
+    margin: 0;
+}
+
 .header__navbar-list,
 .navbar__item,
 .navbar__icon {
