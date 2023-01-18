@@ -1,26 +1,3 @@
-/* Common === */
-.mar-0-8 {
-    margin: 0 8px;
-}
-
-.mar-0-4 {
-    margin: 0px 4px;
-}
-
-.font-18 {
-    font-size: 1.8rem;
-}
-
-.font-13 {
-    font-size: 1.3rem
-}
-
-.separate {
-    border-left: 1px solid #f96d5c;
-    height: 100%;
-}
-/* === End common */
-
 /* Header === */
 .header {
     height: 120px;
@@ -56,6 +33,11 @@
     position: relative;
 }
 
+.navbar__item span {
+    font-size: 1.3rem;
+    margin: 0px 4px;
+}
+
 .navbar__item--strong {
     font-weight: 400;
 }
@@ -77,6 +59,11 @@
 .navbar__item--no-hover {
     cursor: default;
     color: var(--white-color);
+}
+
+.separate {
+    border-left: 1px solid #f96d5c;
+    height: 100%;
 }
 
 /* Navbar QR code === */
@@ -130,6 +117,113 @@
     margin-right: 0.9rem;
 }
 /* === End navbar QR code */
+.navbar__notify {
+    position: absolute;
+    top: 118%;
+    width: 40.4rem;
+    background-color: var(--white-color);
+    right: 0.5rem;
+    border: 0.1rem solid #d3d3d3;
+    display: none;
+    animation: fadeIn ease-in .3s;
+}
+
+.navbar__item--show-notify:hover .navbar__notify{
+    display: block;
+}
+
+.navbar__notify-header {
+    height: 4rem;
+    background-color: var(--white-color);
+}
+
+.navbar__notify-header h3 {
+    color: #999;
+    margin: 0 0 0 12px;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 4rem;
+}
+
+.navbar__notify-list {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.navbar__notify-item:hover {
+    background-color: #f7f7f7;
+}
+
+.navbar__notify-item--viewed {
+    background-color: rgba(238, 75, 43, 0.08);
+}
+
+.navbar__notify-link {
+    display: flex;
+    padding: 1.2rem;
+    text-decoration: none;
+}
+
+.navbar__notify-img {
+    display: block;
+    width: 48px;
+    object-fit: contain;
+}
+
+.navbar__notify-info {
+    margin-left: 1.2rem;
+}
+
+.navbar__notify-name {
+    display: block;
+    font-size: 1.4rem;
+    color: var(--black-color);
+    font-weight: 400;
+}
+
+.navbar__notify-desc {
+    display: block;
+    color: var(--text-color);
+    line-height: 1.6rem;
+}
+
+.navbar__notify-footer {
+    text-align: center;
+    padding: 1rem;
+}
+
+.navbar__notify-footer-btn {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.navbar__language {
+    background-color: var(--white-color);
+    color: var(--text-color);
+    position: absolute;
+    top: 118%;
+    width: 18rem;
+    right: 0;
+    border-radius: 0.1rem;
+    animation: fadeIn ease-in .3s;
+    display: none;
+}
+
+.navbar__language p {
+    margin: 0;
+    padding: 1rem;
+    font-weight: 400;
+}
+
+.navbar__language p:hover {
+    color: #f53e2d;
+}
+
+.navbar__item--show-language:hover .navbar__language {
+    display: block;
+}
+
 /* === End top header */
 
 /* ===End header */
