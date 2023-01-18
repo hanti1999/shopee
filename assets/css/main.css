@@ -128,6 +128,16 @@
     animation: fadeIn ease-in .3s;
 }
 
+.navbar__notify::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2rem;
+    top: -1.6rem;
+    display: block;
+}
+
 .navbar__item--show-notify:hover .navbar__notify{
     display: block;
 }
@@ -208,6 +218,16 @@
     border-radius: 0.1rem;
     animation: fadeIn ease-in .3s;
     display: none;
+}
+
+.navbar__language::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2rem;
+    top: -1.6rem;
+    display: block;
 }
 
 .navbar__language p {
