@@ -126,13 +126,14 @@
 
         </footer>
     </div>
-
+    <!-- Ctrl + [ để di chuyển cả khối code đã bôi đen sang trái và ngược lại -->
+    <!-- Shift + Alt + -> để chọn nhanh tên class -->
     <div class="modal">
         <div class="modal__overlay"></div>
         <div class="modal__body">
-            <div class="modal__inner">
-                <!-- Authenticate form -->
-                <div class="auth-form">
+            <!-- Authenticate form  -->
+            <div class="auth-form">
+                <div class="auth-form__container">
                     <div class="auth-form__header">
                         <h3 class="auth-form__heading">Đăng ký</h3>
                         <span class="auth-form__switch-btn">Đăng nhập</span>
@@ -153,21 +154,33 @@
                     <div class="auth-form__adside">
                         <p class="auth-form__policy-text">
                             Bằng việc đăng ký, bạn đã đồng với với Shopee về
-                            <a href="#" class="auth-form__policy-link"> Điều khoản dịch vụ </a>
+                            <a href="#" class="auth-form__text-link"> Điều khoản dịch vụ </a>
                             &
-                            <a href="#" class="auth-form__policy-link"> Chính sách bảo mật</a>
+                            <a href="#" class="auth-form__text-link"> Chính sách bảo mật</a>
                         </p>
                     </div>
 
                     <div class="auth-form__controls">
-                        <button class="btn">TRỞ LẠI</button>
+                        <button class="btn auth-form__controls-back">TRỞ LẠI</button>
                         <button class="btn btn--primary">ĐĂNG KÝ</button>
                     </div>
+                </div>
 
-                    <div class="auth-form__socials">
-                        <a href="#" class="btn btn-with-icon"><i class="fa-brands fa-square-facebook"></i>Kết nối với Facebook</a>
-                        <a href="#" class="btn btn-with-icon"><i class="fa-brands fa-google"></i>Kết nối với Google</a>
-                    </div>
+                <div class="auth-form__socials">
+                    <a href="#" class="auth-form__socials--faccebook btn btn--size-s btn-with-icon">
+                        <i class="auth-form__socials-icon fa-brands fa-square-facebook"></i>
+                        <span class="auth-form__socials-title">
+                            Kết nối với Facebook
+                        </span>
+                    </a>
+                    <a href="#" class="auth-form__socials--google btn btn--size-s btn-with-icon">
+                        <i class="auth-form__socials-icon">
+                            <img src="./assets/img/google.png" alt="" class="auth-form__socials-google-icon">
+                        </i>
+                        <span class="auth-form__socials-title">
+                            Kết nối với Google
+                        </span>
+                    </a>
                 </div>
             </div>
         </div>

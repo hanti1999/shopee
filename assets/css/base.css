@@ -3,7 +3,7 @@
     --black-color: #000;
     --text-color: #333;
     --primary-color: #EE4D2D;
-
+    --border-color: #dbdbdb;
 }
 
 * {
@@ -80,7 +80,39 @@ html {
     (số càng lớn vị trí càng cao)
     mặc định z-index = 0 
     */
-    background-color: var(--white-color);
-    border-radius: 5px;
     margin: auto;
+}
+
+/* button */
+.btn {
+    padding: 0 12px;
+    min-width: 142px;
+    height: 34px;
+    border: none;
+    border-radius: 2px;
+    text-decoration: none;
+    font-size: 1.4rem;
+    cursor: pointer;
+    background-color: var(--white-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn.btn--size-s {
+    height: 30px;
+    font-size: 1.2rem;
+    padding: 0px 8px;
+}
+
+.btn.btn--primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.btn.btn--disable {
+    color: #949494;
+    cursor: default;
+    background-color: #c3c3c3;
 }
