@@ -78,11 +78,11 @@
 .navbar__qr {
     background-color: var(--white-color);
     position: absolute;
-    width: 18.6rem;
+    width: 186px;
     left: 0;
     top: 150%;
-    padding: 0.8rem;
-    border-radius: 0.2rem;
+    padding: 8px;
+    border-radius: 2px;
     display: none;
     animation: fadeIn ease-in .3s;
     cursor: default;
@@ -97,8 +97,8 @@
     display: block;
     left: 0;
     width: 100%;
-    height: 2rem;
-    top: -1.6rem;
+    height: 20px;
+    top: -16px;
 }
 
 .navbar__item--show-qr:hover .navbar__qr {
@@ -115,15 +115,15 @@
 }
 
 .navbar__qr-apps-img {
-    height: 1.6rem;
+    height: 16px;
 }
 
 .navbar__apps:first-child {
-    margin-left: 1.1rem;
+    margin-left: 11px;
 }
 
 .navbar__apps:nth-child(2) {
-    margin-right: 0.9rem;
+    margin-right: 9px;
 }
 /* === End navbar QR code */
 
@@ -131,10 +131,10 @@
 .navbar__notify {
     position: absolute;
     top: 118%;
-    width: 40.4rem;
+    width: 404px;
     background-color: var(--white-color);
-    right: 0.5rem;
-    border: 0.1rem solid #d3d3d3;
+    right: 5px;
+    border: 1px solid #d3d3d3;
     display: none;
     transform-origin: calc(100% - 20px) top;
     /* Tạo góc xuất hiện animation */
@@ -150,12 +150,12 @@
 .navbar__notify::after {
     /* Tạo mũi tên */
     content: "";
-    border-width: 2rem 3rem;
+    border-width: 20px 30px;
     border-style: solid;
     border-color: transparent transparent #fff transparent;
     position: absolute;
-    right: 1rem;
-    top: -2.6rem;
+    right: 10px;
+    top: -26px;
 }
 
 .navbar__item--show-notify:hover .navbar__notify{
@@ -163,14 +163,14 @@
 }
 
 .navbar__notify-header {
-    height: 4rem;
+    height: 40px;
     background-color: var(--white-color);
     user-select: none;
 }
 
 .navbar__notify-header h3 {
     color: #999;
-    margin: 0 0 0 1.2rem;
+    margin: 0 0 0 12px;
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 4rem;
@@ -192,7 +192,7 @@
 
 .navbar__notify-link {
     display: flex;
-    padding: 1.2rem;
+    padding: 12px;
     text-decoration: none;
 }
 
@@ -203,7 +203,7 @@
 }
 
 .navbar__notify-info {
-    margin-left: 1.2rem;
+    margin-left: 12px;
 }
 
 .navbar__notify-name {
