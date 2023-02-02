@@ -1,12 +1,13 @@
 /* Header === */
 .header {
-    height: 120px;
+    height: var(--header-height);
     background-image: linear-gradient(0, #fe6433, #f53e2d);
     /* Góc 0 độ, mã màu 1, mã màu 2 */
 }
 
 /* Top header === */
 .header__navbar {
+    height: var(--navbar-height);
     display: flex;
     justify-content: space-between;
 }
@@ -25,12 +26,20 @@
 
 .navbar__item {
     display: inline-block;  
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     text-decoration: none;
     color: var(--white-color);
     font-weight: 300;
     margin: 0 8px;
     position: relative;
+}
+
+.navbar__item:first-child {
+    margin-left: 0;
+}
+
+.navbar__item:last-child {
+    margin: 0;
 }
 
 .navbar__item span {
@@ -51,10 +60,6 @@
 
 .navbar__icon--small {
     font-size: 1.4rem;
-}
-
-.navbar__item--no-margin {
-    margin: 0;
 }
 
 .header__navbar-list,
@@ -391,7 +396,39 @@
     border-left: 1px solid #ccc;
     margin: 0px 12px;
 }
-
 /* === End Authen modal */
+/* Header with search === */
+.header-with-search {
+    height: var(--header-search-height);
+    display: flex;
+    align-items: center;
+}
 
+.header__logo {
+    width: 200px;
+}
+
+.header__logo-img {
+    width: 145px;
+}
+
+.header__search {
+    height: 40px;
+    background-color: var(--white-color);
+    flex: 1;
+    border-radius: 2px;
+}
+
+.header__cart {
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.header__cart-icon {
+    font-size: 2.2rem;
+    color: var(--white-color);
+}
+
+/* === End header with search */
 /* ===End header */
