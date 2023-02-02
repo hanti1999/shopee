@@ -405,7 +405,7 @@
 }
 
 .header__logo {
-    width: 200px;
+    width: 195px;
 }
 
 .header__logo-img {
@@ -423,13 +423,13 @@
 
 .header__search-bar {
     height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
-    width: 100%;
 }
 
 .header__cart {
-    width: 150px;
+    width: 165px;
     text-align: center;
 }
 
@@ -457,6 +457,17 @@
 
 .header__search-icon-btn {
     font-size: 1.4rem;
+}
+
+.header__search-recommend {
+    padding: 8px 0;
+}
+
+.header__search-recommend-item {
+    color: var(--white-color);
+    font-size: 1.2rem;
+    padding-right: 8px;
+    text-decoration: none;
 }
 
 /* === End header with search */
