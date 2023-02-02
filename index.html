@@ -40,7 +40,7 @@
                         <div class="navbar__item">
                             <div class="navbar__item--no-hover">Kết nối</div>
                         </div>
-                        <div class="navbar__item">
+                        <div class="navbar__item navbar__item--no-margin">
                             <a href="https://vi-vn.facebook.com/" class="navbar__icon" target="_blank">
                                 <i class="fa-brands fa-facebook"></i>
                             </a>
@@ -101,9 +101,9 @@
                         </div>
                         <div class="navbar__item navbar__item--show-language">
                             <div class="navbar__icon navbar__icon--small">
-                                <i class="ti-world"></i>
+                                <i class="fa-solid fa-globe"></i>
                                 <span>Tiếng Việt</span>
-                                <i class="ti-angle-down"></i>
+                                <i class="fa-solid fa-angle-down"></i>
                             </div>
                             <div class="navbar__language">
                                 <p>Tiếng Việt</p>
@@ -118,11 +118,22 @@
 
                 <div class="header-with-search">
                     <div class="header__logo">
-                        <img src="./assets/img/logo/Shopee-white.png" alt="" class="header__logo-img">
+                        <a href="#">
+                            <img src="./assets/img/logo/Shopee-white.png" alt="" class="header__logo-img">
+                        </a>
                     </div>
 
                     <div class="header__search">
-
+                        <div class="header__search-bar">
+                            <input type="text" placeholder="Nhập từ khóa cần tìm" class="header__search-input">
+                            <button class="header__search-btn btn btn--primary">
+                                <i class="header__search-icon-btn fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                        <div class="header__search-recommend">
+                            <span>VGA</span>
+                            <span>Card màn hình</span>
+                        </div>
                     </div>
 
                     <div class="header__cart">

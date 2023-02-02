@@ -2,7 +2,7 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
-    --primary-color: #EE4D2D;
+    --primary-color: #fb5533;
     --border-color: #dbdbdb;
     --header-height: 120px;
     --navbar-height: 24px;
@@ -81,10 +81,6 @@ html {
 
 .modal__body {
     z-index: 1;
-    /* Đẩy element này lên vị trí số 1 
-    (số càng lớn vị trí càng cao)
-    mặc định z-index = 0 
-    */
     margin: auto;
     animation: grow linear .25s;
 }
