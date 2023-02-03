@@ -93,7 +93,7 @@
     cursor: default;
 }
 
-.header__cart-show-cart::before,
+.header__cart--show-cart::before,
 .navbar__qr::before,
 .navbar__notify::before,
 .navbar__language::before {
@@ -107,6 +107,7 @@
     top: -16px;
 }
 
+/* Hover show QR */
 .navbar__item--show-qr:hover .navbar__qr {
     display: block;
 }
@@ -152,7 +153,7 @@
     tự tối ưu*/
 }
 
-.header__cart-show-cart::after,
+.header__cart--show-cart::after,
 .navbar__language::after,
 .navbar__notify::after {
     /* Tạo mũi tên */
@@ -165,6 +166,7 @@
     top: -26px;
 }
 
+/* Hover show notify */
 .navbar__item--show-notify:hover .navbar__notify{
     display: block;
 }
@@ -264,6 +266,7 @@
     color: #f53e2d;
 }
 
+/* Hover show language */
 .navbar__item--show-language:hover .navbar__language {
     display: block;
 }
@@ -433,17 +436,18 @@
 }
 
 .header__cart {
-    width: 165px;
+    /* width: 165px; */
+    margin: 0px 60px;
     text-align: center;
     position: relative;
 }
 
-.header__cart-show-cart {
+.header__cart--show-cart {
     position: absolute;
     width: 400px;
     height: 250px;
     background-color: var(--white-color);
-    right: calc(100% - 100px);
+    right: calc(100% - 30px);
     top: 40px;
     border: 1px solid #ccc;
     display: none;
@@ -456,13 +460,15 @@
     will-change: opacity, transform;
 }
 
-.header__cart-show-cart::after {
+/* Thay đổi vị trí mũi tên */
+.header__cart--show-cart::after {
     top: -18px;
-    right: 0px;
+    right: 1px;
     border-width: 10px 15px;
 }
 
-.header__cart:hover .header__cart-show-cart {
+/* Hover show cart */
+.header__cart:hover .header__cart--show-cart {
     display: flex;
 }
 
