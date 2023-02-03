@@ -93,6 +93,7 @@
     cursor: default;
 }
 
+.header__cart-show-cart::before,
 .navbar__qr::before,
 .navbar__notify::before,
 .navbar__language::before {
@@ -151,6 +152,7 @@
     tự tối ưu*/
 }
 
+.header__cart-show-cart::after,
 .navbar__language::after,
 .navbar__notify::after {
     /* Tạo mũi tên */
@@ -170,6 +172,7 @@
 .navbar__notify-header {
     height: 40px;
     background-color: var(--white-color);
+    -webkit-user-select: none;
     user-select: none;
 }
 
@@ -426,11 +429,51 @@
     width: 100%;
     display: flex;
     align-items: center;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
 }
 
 .header__cart {
     width: 165px;
     text-align: center;
+    position: relative;
+}
+
+.header__cart-show-cart {
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    background-color: var(--white-color);
+    right: calc(100% - 100px);
+    top: 40px;
+    border: 1px solid #ccc;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 2px;
+    transform-origin: calc(100% - 20px) top;
+    animation: grow ease-in .2s;
+    will-change: opacity, transform;
+}
+
+.header__cart-show-cart::after {
+    top: -18px;
+    right: 0px;
+    border-width: 10px 15px;
+}
+
+.header__cart:hover .header__cart-show-cart {
+    display: flex;
+}
+
+.header__cart-img {
+    width: 120px;
+}
+
+.header__cart-img-des {
+    font-size: 1.4rem;
+    margin-top: 15px;
+    color: var(--text-color);
 }
 
 .header__cart-icon {
@@ -460,7 +503,7 @@
 }
 
 .header__search-recommend {
-    padding: 8px 0;
+    padding: 7px 0;
 }
 
 .header__search-recommend-item {
