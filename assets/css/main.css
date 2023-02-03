@@ -436,8 +436,7 @@
 }
 
 .header__cart {
-    /* width: 165px; */
-    margin: 0px 60px;
+    margin: 0px 70px;
     text-align: center;
     position: relative;
 }
