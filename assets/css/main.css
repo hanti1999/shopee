@@ -539,7 +539,7 @@
     right: calc(100% - 30px);
     top: calc(100% + 15px);
     border: 1px solid #ccc;
-    /* display: none; */
+    display: none;
     border-radius: 2px;
     transform-origin: calc(100% - 20px) top;
     animation: grow ease-in .2s;
