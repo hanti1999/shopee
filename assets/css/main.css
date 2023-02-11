@@ -832,6 +832,10 @@
     background-color: #f5f5f5;
 }
 
+.app__content {
+    padding-top: 36px;
+}
+
 .category {
     background-color: #fff;
     border-radius: 2px;
@@ -850,6 +854,7 @@
     padding: 14px 16px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     margin-bottom: 0px;
+    margin-top: 0;
 }
 
 .category-list {
@@ -888,5 +893,7 @@
     right: -4px;
     color: var(--primary-color);
 }
+
+
 
 /* === End App container */
