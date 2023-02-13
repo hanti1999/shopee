@@ -277,28 +277,62 @@
                         </nav>
                     </div>
                     <div class="grid__column-10">
+                        <!-- Filter -->
                         <div class="home-filter">
                             <span class="home-filter__label">Sắp xếp theo</span>
-                            <button class="btn">Phổ biến</button>
-                            <button class="btn btn--primary">Mới nhất</button>
-                            <button class="btn">bán chạy</button>
+                            <button class="btn home-filter__btn btn--primary">Phổ Biến</button>
+                            <button class="btn home-filter__btn">Mới Nhất</button>
+                            <button class="btn home-filter__btn">Bán Chạy</button>
 
-                            <div class="seclect-input">
+                            <div class="select-input">
                                 <span class="select-input__label">Giá</span>
-                                <i class="fa-solid fa-angle-down"></i>
+                                <i class="select-input__icon fa-solid fa-angle-down"></i>
+                                <ul class="select-input__list">
+                                    <li class="select-input__item">
+                                        <a href="#" class="select-input__link">Giá: thấp đến cao</a>
+                                    </li>
+                                    <li class="select-input__item">
+                                        <a href="#" class="select-input__link">Giá: cao đến thấp</a>
+                                    </li>
+                                </ul>
                             </div>
                             <div class="home-filter__paginate">
                                 <span class="home-filter__page-num">
-                                    <span class="home-filter__page-current">1</span>
-                                    /14
+                                    <span class="home-filter__page-current">1</span>/14
                                 </span>
                                 <div class="home-filter__page-control">
-                                    <a href="#" class="home-filter__page-btn">
-                                        <i class="fa-solid fa-angle-left"></i>
+                                    <a href="#" class="home-filter__page-btn home-filter__page-btn--disable">
+                                        <i class="home-filter__page-icon fa-solid fa-angle-left"></i>
                                     </a>
                                     <a href="#" class="home-filter__page-btn">
-                                        <i class="fa-solid fa-angle-right"></i>
+                                        <i class="home-filter__page-icon fa-solid fa-angle-right"></i>
                                     </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Product -->
+                        <div class="home-product">
+                            <div class="grid__row">
+                                <div class="grid__column-2">
+                                    <div class="home-product-item">
+                                        <img class="home-product-item__img" src="https://cf.shopee.vn/file/sg-11134201-22100-cishggrmcriv0c_tn" alt="">
+                                        <h4 class="home-product-item__name">Chuột không dây Logitech G304 6 nút</h4>
+                                        <div class="home-product-item__tag">#Shopdacbiet</div>
+                                        <div class="home-product-item__price">
+                                            <span class="home-product-item__price-old">1.299.000đ</span>
+                                            <span class="home-product-item__price-current">839.000đ</span>
+                                        </div>
+                                        <div class="home-product-item__footer">
+                                            <div class="home-product-item__rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            <div class="home-product-item__sold">Đã bán 5,9k</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
