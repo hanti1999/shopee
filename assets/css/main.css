@@ -964,5 +964,125 @@
 .home-filter__page-btn--disable .home-filter__page-icon {
     color: #ccc;
 }
+    /* Home product item*/
+.home-product-item-link {
+    text-decoration: none;
+}
+
+.home-product-item {
+    background-color: var(--white-color);
+    margin-top: 10px;
+}
+
+.home-product-item__header {
+    position: relative;
+}
+
+.home-product-item__img {
+    padding-top: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.home-product-item__mini-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.home-product-item__mini-banner-img {
+    width: 100%;
+}
+
+.home-product-item__info {
+    margin: 0 10px;
+}
+
+.home-product-item__name {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--text-color);
+    margin: 10px 10px 0px 0;
+    line-height: 1.4rem;
+    height: 2.8rem;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.home-product-item__tag {
+    padding: 2px 4px;
+    border: 1px solid #ee4d2d;
+    color: #ee4d2d;
+    margin: 4px 10px 0 0;
+    display: inline-block;
+}
+
+.home-product-item__shop-tag {
+    position: absolute;
+    top: 0;
+    background-color: rgb(208, 1, 27);
+}
+
+.home-product-item__shop-tag-info {
+    background-image: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/1ea7594a0e6dbc0cdb8640b83a1079bb.png);
+}
+
+.home-product-item__sale-off {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.home-product-item__sale-off-percent {
+    
+}
+
+.home-product-item__sale-off-label {
+
+}
+
+.home-product-item__price {
+    margin-top: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.home-product-item__price-old {
+    font-size: 1.4rem;
+    color: #666;
+    text-decoration: line-through;
+    margin-right: 4px;
+}
+
+.home-product-item__price-current {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+}
+
+.home-product-item__footer {
+    margin: 12px 0 0 10px;
+    display: flex;
+    align-items: baseline;
+    padding-bottom: 12px;
+}
+
+.home-product-item__rating {
+    color: rgb(251, 206, 61);
+    font-size: .8rem;
+}
+
+.home-product-item__sold {
+    margin-left: 4px;
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+
 
 /* === End App container */
