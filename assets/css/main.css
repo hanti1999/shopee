@@ -1039,11 +1039,11 @@
 }
 
 .home-product-item__sale-off-percent {
-    
+    color: var(--primary-color);
 }
 
 .home-product-item__sale-off-label {
-
+    color: var(--white-color);
 }
 
 .home-product-item__price {
