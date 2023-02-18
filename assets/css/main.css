@@ -838,11 +838,6 @@
     padding-top: 36px;
 }
 
-.category {
-    background-color: #fff;
-    border-radius: 2px;
-}
-
 .category__heading-icon {
     font-size: 1.4rem;
     margin-right: 4px;
@@ -972,6 +967,17 @@
 .home-product-item {
     background-color: var(--white-color);
     margin-top: 10px;
+    position: relative;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .1);
+    transition: transform ease-in .1s;
+    will-change: transform;
+}
+
+.home-product-item:hover {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+    transform: translateY(-1px);
 }
 
 .home-product-item__header {
@@ -982,6 +988,7 @@
     padding-top: 100%;
     background-repeat: no-repeat;
     background-size: contain;
+    background-image: url(https://cf.shopee.vn/file/sg-11134201-22100-cishggrmcriv0c_tn);
 }
 
 .home-product-item__mini-banner {
@@ -1004,7 +1011,7 @@
     font-size: 1.3rem;
     font-weight: 400;
     color: var(--text-color);
-    margin: 10px 10px 0px 0;
+    margin: 10px 0 0 0;
     line-height: 1.4rem;
     height: 2.8rem;
     overflow: hidden;
@@ -1018,32 +1025,103 @@
     padding: 2px 4px;
     border: 1px solid #ee4d2d;
     color: #ee4d2d;
-    margin: 4px 10px 0 0;
+    margin-top: 4px;
     display: inline-block;
 }
 
-.home-product-item__shop-tag {
+.home-product-item__ribbon {
     position: absolute;
-    top: 0;
-    background-color: rgb(208, 1, 27);
+    top: 10px;
+    left: -2px;
+    color: rgb(208, 1, 27);
+    background-color: currentColor;
+    width: 28px;
+    height: 16px;
+    display: flex;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
 }
 
-.home-product-item__shop-tag-info {
+.home-product-item__ribbon::before {
+    border-top: 3px solid currentColor;
+    border-left: 3px solid transparent;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2.5px;
+    filter: brightness(75%);
+}
+
+.home-product-item__ribbon-info {
     background-image: url(https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/1ea7594a0e6dbc0cdb8640b83a1079bb.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 8px;
+    margin: auto;
+}
+
+.home-product-item__favourite {
+    position: absolute;
+    top: 30px;
+    left: -2px;
+    color: var(--primary-color);
+    background-color: currentColor;
+    padding: 1px 4px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    font-size: 1.2rem;
+}
+
+.home-product-item__favourite::before {
+    border-top: 3px solid currentColor;
+    border-left: 3px solid transparent;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    filter: brightness(75%);
+}
+
+.home-product-item__favourite span {
+    color: white;
 }
 
 .home-product-item__sale-off {
     position: absolute;
     top: 0;
     right: 0;
+    width: 36px;
+    height: 32px;
+    color: rgba(255,212,36,.9);
+    background-color: currentColor;
+    text-align: center;
+}
+
+.home-product-item__sale-off::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -3px;
+    border-color: transparent currentColor;
+    border-width: 0 18px 4px ;
+    border-style: solid;
+}
+
+.home-product-item__sale-off-item {
+    padding: 4px 2px 3px 2px;
 }
 
 .home-product-item__sale-off-percent {
-    color: var(--primary-color);
+    color: #ee4d2d;
+    font-size: 1.2rem;
 }
 
 .home-product-item__sale-off-label {
     color: var(--white-color);
+    font-size: 1.2rem;
+    text-transform: uppercase;
 }
 
 .home-product-item__price {
@@ -1066,14 +1144,14 @@
 }
 
 .home-product-item__footer {
-    margin: 12px 0 0 10px;
+    margin: 15px 0 0 10px;
     display: flex;
     align-items: baseline;
-    padding-bottom: 12px;
+    padding-bottom: 8px;
 }
 
 .home-product-item__rating {
-    color: rgb(251, 206, 61);
+    color: var(--star-color);
     font-size: .8rem;
 }
 
