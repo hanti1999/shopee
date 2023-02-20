@@ -94,8 +94,11 @@
     transform-origin: calc(100% - 20px) top;
 }
 
+.header__cart-list::after,
+.navbar__language::after,
+.navbar__notify::after,
 .navbar__user-menu::after {
-    /* arrow */
+    /* mũi tên */
     content: "";
     border-width: 20px 30px;
     border-style: solid;
@@ -240,19 +243,6 @@
     height: 20px;
     top: -16px;
 }
-
-.navbar__notify::after {
-    /* Tạo mũi tên */
-    content: "";
-    border-width: 20px 30px;
-    border-style: solid;
-    border-color: transparent transparent #fff transparent;
-    position: absolute;
-    right: 10px;
-    top: -26px;
-    z-index: -1;
-}
-
     /* Hover show notify */
 .navbar__item--show-notify:hover .navbar__notify{
     display: block;
@@ -357,18 +347,6 @@
     width: 100%;
     height: 20px;
     top: -16px;
-}
-
-.navbar__language::after {
-    /* Tạo mũi tên */
-    content: "";
-    border-width: 20px 30px;
-    border-style: solid;
-    border-color: transparent transparent #fff transparent;
-    position: absolute;
-    right: 10px;
-    top: -26px;
-    z-index: -1;
 }
 
 .navbar__language p {
@@ -681,10 +659,6 @@
 
     /* mũi tên cart*/
 .header__cart-list::after {
-    content: "";
-    border-style: solid;
-    border-color: transparent transparent #fff transparent;
-    position: absolute;
     top: -18px;
     right: 1px;
     border-width: 10px 15px;
@@ -721,8 +695,8 @@
 
     /* header cart has item === */
 .header__cart-list-item {
-    max-height: 300px; /* Đặt chiều cao cố định cho ô chức sản phẩm */
-    overflow: auto; /* Hiện thanh cuộn khi vượt quá chiều cao cố định */
+    max-height: 50vh; /* Đặt chiều cao cố định cho ô chứa sản phẩm */
+    overflow-y: auto; /* Hiện thanh cuộn khi vượt quá chiều cao cố định */
 }
 
 .header__cart-heading {
@@ -767,6 +741,7 @@
     font-weight: 400;
     color: var(--text-color);
     margin: 0px 0px 10px 0px;
+    /* Xuống dòng text */
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -866,12 +841,13 @@
 }
 
 .category-item--active .category-item__link::before {
+    /* Mũi tên category */
     content: "";
     position: absolute;
-    border: 4px solid;
+    border: 3.5px solid;
     border-color: transparent transparent transparent var(--primary-color);
     top: 50%; /* 50% của thẻ chứa nó */
-    transform: translateY(calc(50% - 9px)); /* 50% của chính nó */
+    transform: translateY(calc(50% - 8px)); /* 50% của chính nó */
     left: 7px;
 }
 
@@ -968,8 +944,7 @@
     background-color: var(--white-color);
     margin-top: 10px;
     position: relative;
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
+    border-radius: 2px;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .1);
     transition: transform ease-in .1s;
     will-change: transform;
@@ -988,7 +963,8 @@
     padding-top: 100%;
     background-repeat: no-repeat;
     background-size: contain;
-    background-image: url(https://cf.shopee.vn/file/sg-11134201-22100-cishggrmcriv0c_tn);
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
 }
 
 .home-product-item__mini-banner {
@@ -1012,10 +988,10 @@
     font-weight: 400;
     color: var(--text-color);
     margin: 10px 0 0 0;
-    line-height: 1.4rem;
-    height: 2.8rem;
     overflow: hidden;
     display: block;
+    line-height: 1.4rem;
+    height: 2.8rem;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
@@ -1105,7 +1081,7 @@
     right: 0;
     bottom: -3px;
     border-color: transparent currentColor;
-    border-width: 0 18px 4px ;
+    border-width: 0 18px 4px ; /* Xóa border top */
     border-style: solid;
 }
 

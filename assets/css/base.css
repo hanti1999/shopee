@@ -181,6 +181,7 @@ html {
     list-style: none;
     display: none;
     animation: fadeIn ease .4s;
+    z-index: 1;
 }
 
 .select-input__list::before {
