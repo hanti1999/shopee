@@ -1137,6 +1137,141 @@
     color: var(--text-color);
 }
 
-
-
+.home-product__pagination {
+    margin-top: 48px;
+    margin-bottom: 32px;
+}
 /* === End App container */
+
+/* Footer */
+.footer {
+    background-color: #fbfbfb;
+}
+
+.footer-link {
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+.footer__heading {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.footer-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.footer-item {
+    margin-bottom: 12px;
+}
+
+.footer__delivery-list,
+.footer__purchase-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer__delivery-item,
+.footer__purchase-item {
+    padding: 4px;
+    background-color: var(--white-color);
+    border-radius: 2px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.footer-item__link {
+    text-decoration: none;
+    color: rgba(0, 0, 0, .6);
+    font-size: 1.2rem;
+}
+
+.footer-item__link:hover {
+    color: var(--primary-color);
+}
+
+.footer__follow-link {
+    display: flex;
+    align-items: center;
+}
+
+.footer__follow-link-icon {
+    font-size: 1.6rem;
+    margin-right: 8px;
+    color: rgba(0, 0, 0, .6) !important;
+}
+
+.footer__download {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__download-QR {
+    padding: 4px;
+    background-color: var(--white-color);
+    margin-right: 12px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    border-radius: 2px;
+}
+
+.footer__download-apps {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.footer__download-item {
+    background-color: var(--white-color);
+    padding: 4px;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    list-style: none;
+}
+
+.footer__download-item-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-coppyright-countries {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.4rem;
+    padding: 40px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.countries {
+    display: flex;
+}
+
+.countries__item {
+    padding-left: 5px;
+    padding-right: 5px;
+    color: rgba(0, 0, 0, .6);
+    border-right: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.countries__item:first-child,
+.countries__item:last-child {
+    border: none;
+}
+
+.countries__item-link {
+    text-decoration: none;
+    color: rgba(0, 0, 0, .6);
+}
+
+.footer-company-info {
+    padding-top: 42px;
+    padding-bottom: 37px;
+}
