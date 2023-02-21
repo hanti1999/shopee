@@ -1150,6 +1150,7 @@
 
 .footer-link {
     border-top: 1px solid rgba(0, 0, 0, .1);
+    padding-bottom: 30px;
 }
 
 .footer__heading {
@@ -1196,14 +1197,17 @@
 }
 
 .footer__follow-link {
-    display: flex;
-    align-items: center;
+    position: relative;
+    margin-left: 20px;
 }
 
 .footer__follow-link-icon {
     font-size: 1.6rem;
-    margin-right: 8px;
     color: rgba(0, 0, 0, .6) !important;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .footer__download {
@@ -1248,6 +1252,11 @@
     font-size: 1.4rem;
     padding: 40px 0;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer-coppyright-countries > p {
+    margin: 0; 
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .countries {
