@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="./assets/img/logo/Shopee-logo850x850.png" type="image/gif" sizes="16x16">
+    <script src="./assets/script/script.js"></script>
     <title>Demo Shopee</title>
 </head>
 <body>
@@ -111,12 +112,12 @@
                                 <p>English</p>
                             </div>
                         </div>
-<!--                         
-                        <div class="navbar__item navbar__item--strong">Đăng ký</div>
+                         
+                        <div onclick="openModal(document.querySelector('.modal'))" class="navbar__item navbar__item--strong">Đăng ký</div>
                         <span class="separate"></span>
-                        <div class="navbar__item navbar__item--strong">Đăng nhập</div> 
--->
-                        <div class="navbar__user navbar__item">
+                        <div onclick="openModal(document.querySelector('.modal'))" class="navbar__item navbar__item--strong">Đăng nhập</div> 
+
+                        <!-- <div class="navbar__user navbar__item">
                             <img src="./assets/img/user.png" alt="" class="navbar__user-img">
                             <span class="navbar__user-name">Hoàng Anh</span>
 
@@ -131,7 +132,7 @@
                                     <a href="#">Đăng xuất</a>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </nav>
 
@@ -1098,7 +1099,7 @@
     <!-- Ctrl + [ để di chuyển cả khối code đã bôi đen sang trái và ngược lại -->
     <!-- Shift + Alt + -> để chọn nhanh tên class -->
     <div class="modal">
-        <div class="modal__overlay"></div>
+        <div onclick="closeModal(document.querySelector('.modal'))" class="modal__overlay"></div>
         <div class="modal__body">
             <!-- Register form  -->
             <div class="auth-form">
@@ -1154,7 +1155,7 @@
             </div>
 
             <!-- Login form -->
-            <!-- <div class="auth-form">
+            <div class="auth-form auth-form--none">
                 <div class="auth-form__container">
                     <div class="auth-form__header">
                         <h3 class="auth-form__heading">Đăng nhập</h3>
@@ -1200,7 +1201,7 @@
                         </span>
                     </a>
                 </div>
-            </div> -->
+            </div>
         </div>
     </div>
 </body>
