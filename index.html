@@ -113,9 +113,9 @@
                             </div>
                         </div>
                          
-                        <div onclick="openModal(document.querySelector('.modal'))" class="navbar__item navbar__item--strong">Đăng ký</div>
+                        <div onclick="openModal(), openSignupForm()" class="navbar__item navbar__item--strong">Đăng ký</div>
                         <span class="separate"></span>
-                        <div onclick="openModal(document.querySelector('.modal'))" class="navbar__item navbar__item--strong">Đăng nhập</div> 
+                        <div onclick="openModal(), openLoginForm()" class="navbar__item navbar__item--strong">Đăng nhập</div> 
 
                         <!-- <div class="navbar__user navbar__item">
                             <img src="./assets/img/user.png" alt="" class="navbar__user-img">
@@ -1096,13 +1096,12 @@
             </div>
         </footer>
     </div>
-    <!-- Ctrl + [ để di chuyển cả khối code đã bôi đen sang trái và ngược lại -->
-    <!-- Shift + Alt + -> để chọn nhanh tên class -->
+
     <div class="modal">
-        <div onclick="closeModal(document.querySelector('.modal'))" class="modal__overlay"></div>
+        <div onclick="closeModal(), closeSignupForm(), closeLoginForm()" class="modal__overlay"></div>
         <div class="modal__body">
             <!-- Register form  -->
-            <div class="auth-form">
+            <div class="auth-form auth-signup">
                 <div class="auth-form__container">
                     <div class="auth-form__header">
                         <h3 class="auth-form__heading">Đăng ký</h3>
@@ -1155,7 +1154,7 @@
             </div>
 
             <!-- Login form -->
-            <div class="auth-form auth-form--none">
+            <div class="auth-form auth-login">
                 <div class="auth-form__container">
                     <div class="auth-form__header">
                         <h3 class="auth-form__heading">Đăng nhập</h3>
