@@ -1,7 +1,3 @@
-const login = document.querySelector(".auth-login");
-const signup = document.querySelector(".auth-signup");
-const modal = document.querySelector(".modal");
-
 function openModal () {
     document.querySelector('.modal').style.display = "flex"; 
 }
