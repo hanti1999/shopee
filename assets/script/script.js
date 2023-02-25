@@ -1,12 +1,9 @@
-function openModal () {
-    document.querySelector('.modal').style.display = "flex"; 
-}
-
 function openLoginForm() { 
+    document.querySelector('.modal').style.display = "flex"; 
     document.querySelector(".auth-login").style.display = "block"; 
 } 
-  
 function openSignupForm() { 
+    document.querySelector('.modal').style.display = "flex"; 
     document.querySelector(".auth-signup").style.display = "block"; 
 }
 
