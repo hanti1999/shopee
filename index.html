@@ -117,6 +117,7 @@
                         <span class="separate"></span>
                         <div onclick="openModal(), openLoginForm()" class="navbar__item navbar__item--strong">Đăng nhập</div> 
 
+                        <!-- log in success -->
                         <!-- <div class="navbar__user navbar__item">
                             <img src="./assets/img/user.png" alt="" class="navbar__user-img">
                             <span class="navbar__user-name">Hoàng Anh</span>
@@ -1098,14 +1099,14 @@
     </div>
 
     <div class="modal">
-        <div onclick="closeModal(), closeSignupForm(), closeLoginForm()" class="modal__overlay"></div>
+        <div onclick="closeAllForm()" class="modal__overlay"></div>
         <div class="modal__body">
             <!-- Register form  -->
             <div class="auth-form auth-signup">
                 <div class="auth-form__container">
                     <div class="auth-form__header">
                         <h3 class="auth-form__heading">Đăng ký</h3>
-                        <span onclick="closeSignupForm(), openLoginForm()" class="auth-form__switch-btn">Đăng nhập</span>
+                        <span onclick="swichForms()" class="auth-form__switch-btn">Đăng nhập</span>
                     </div>
                     
                     <div class="auth-form__form">
@@ -1158,7 +1159,7 @@
                 <div class="auth-form__container">
                     <div class="auth-form__header">
                         <h3 class="auth-form__heading">Đăng nhập</h3>
-                        <span onclick="closeLoginForm(), openSignupForm()" class="auth-form__switch-btn">Đăng ký</span>
+                        <span onclick="swichForms()" class="auth-form__switch-btn">Đăng ký</span>
                     </div>
                     
                     <div class="auth-form__form">
