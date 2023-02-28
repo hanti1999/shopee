@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="./assets/img/logo/Shopee-logo850x850.png" type="image/gif" sizes="16x16">
+    <link rel="shortcut icon" href="./assets/img/logo/Shopee-logo850x850.png" type="image/x-icon">
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
     <script src="./assets/script/script.js"></script>
     <title>Demo Shopee</title>
 </head>
@@ -113,9 +114,9 @@
                             </div>
                         </div>
                          
-                        <div onclick="openSignupForm()" class="navbar__item navbar__item--strong">Đăng ký</div>
+                        <div id="register-btn" onclick="openSignupForm()" class="navbar__item navbar__item--strong">Đăng ký</div>
                         <span class="separate"></span>
-                        <div onclick="openLoginForm()" class="navbar__item navbar__item--strong">Đăng nhập</div> 
+                        <div id="login-btn" onclick="openLoginForm()" class="navbar__item navbar__item--strong">Đăng nhập</div> 
 
                         <!-- log in success -->
                         <!-- <div class="navbar__user navbar__item">
@@ -1106,7 +1107,7 @@
                 <div class="auth-form__container">
                     <div class="auth-form__header">
                         <h3 class="auth-form__heading">Đăng ký</h3>
-                        <span onclick="swichForms()" class="auth-form__switch-btn">Đăng nhập</span>
+                        <span id="switch-to-login" onclick="swichForms()" class="auth-form__switch-btn">Đăng nhập</span>
                     </div>
                     
                     <div class="auth-form__form">
@@ -1159,7 +1160,7 @@
                 <div class="auth-form__container">
                     <div class="auth-form__header">
                         <h3 class="auth-form__heading">Đăng nhập</h3>
-                        <span onclick="swichForms()" class="auth-form__switch-btn">Đăng ký</span>
+                        <span id="switch-to-register" onclick="swichForms()" class="auth-form__switch-btn">Đăng ký</span>
                     </div>
                     
                     <div class="auth-form__form">
