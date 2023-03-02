@@ -647,6 +647,10 @@
     z-index: 1;
 }
 
+.cart-btn {
+    display: none;
+}
+
 .header__cart-list::before {
     content: "";
     position: absolute;
@@ -746,6 +750,9 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     max-width: 200px;
+    /* display: -webkit-box;
+    -webkit-box-orient: vertical;
+   	-webkit-line-clamp: 1; */
 }
 
 .header__cart-item-price {

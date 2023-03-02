@@ -24,18 +24,6 @@ html {
 }
 
 /* Responsive */
-.grid {
-    width: 1200px; 
-    /* những màm hình có kích thước >=1200 thì kích thước class này là 1200 */
-    max-width: 100%; 
-    /* nhưng màn hình nhỏ hơn 1200 thì sẽ giảm kích thước = 100% màn hình */
-    margin: 0 auto;
-}
-
-.grid__full-width {
-    width: 100%;
-}
-
 .grid__row {
     display: flex;
     flex-wrap: wrap;

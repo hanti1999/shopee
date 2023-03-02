@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,8 +19,8 @@
 <body>
     <div class="app">
         <header class="header">
-            <div class="grid">
-                <nav class="header__navbar">
+            <div class="grid wide">
+                <nav class="header__navbar hide-on-mobile-tablet">
                     <div class="header__navbar-list">
                         <a href="#" class="navbar__item">Kênh người bán</a>
                         <span class="separate"></span>
@@ -114,12 +116,12 @@
                             </div>
                         </div>
                          
-                        <div id="register-btn" onclick="openSignupForm()" class="navbar__item navbar__item--strong">Đăng ký</div>
+                        <!-- <div id="register-btn" onclick="openSignupForm()" class="navbar__item navbar__item--strong">Đăng ký</div>
                         <span class="separate"></span>
-                        <div id="login-btn" onclick="openLoginForm()" class="navbar__item navbar__item--strong">Đăng nhập</div> 
+                        <div id="login-btn" onclick="openLoginForm()" class="navbar__item navbar__item--strong">Đăng nhập</div> -->
 
                         <!-- log in success -->
-                        <!-- <div class="navbar__user navbar__item">
+                        <div class="navbar__user navbar__item">
                             <img src="./assets/img/user.png" alt="" class="navbar__user-img">
                             <span class="navbar__user-name">Hoàng Anh</span>
 
@@ -134,12 +136,12 @@
                                     <a href="#">Đăng xuất</a>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
                 </nav>
 
                 <div class="header-with-search">
-                    <div class="header__logo">
+                    <div class="header__logo hide-on-tablet">
                         <a href="#" class="header__logo-link">
                             <img src="./assets/img/logo/Shopee-white.png" alt="" class="header__logo-img">
                         </a>
@@ -164,7 +166,7 @@
                                 <i class="header__search-icon-btn fa-solid fa-magnifying-glass"></i>
                             </button>
                         </div>
-                        <div class="header__search-recommend">
+                        <div class="header__search-recommend hide-on-mobile-tablet">
                             <a href="#" class="header__search-recommend-item">Card đồ họa</a>
                             <a href="#" class="header__search-recommend-item">Tai nghe</a>
                             <a href="#" class="header__search-recommend-item">Màn hình Gaming</a>
@@ -188,6 +190,9 @@
                             <img class="header__cart--no-cart-img" src="./assets/img/cartItem.jpg" alt="">
                             <span class="header__cart--no-cart-des">Chưa có sản phẩm</span>
 
+                            <div class="cart-btn btn">
+                                Đóng giỏ hàng
+                            </div>
                             <h3 class="header__cart-heading">Sản phẩm mới thêm</h3>
                             <div class="header__cart-list-item">
                                 <!-- sản phẩm -->
@@ -195,7 +200,7 @@
                                     <img src="./assets/img/MSI-GTX-1650.jpg" alt="" class="header__cart-img">
                                     <div class="header__cart-item-info">
                                         <div class="header__cart-item-head">
-                                            <h5 class="header__cart-item-name">VGA MSI GeForce GTX 1650 4GB GDDR6 Ventus XS OC</h5>
+                                            <h5 class="header__cart-item-name">VGA MSI GeForce GTX 1650 4GB GDDR6 Ventus XS OCVGA MSI GeForce GTX 1650 4GB GDDR6 Ventus XS OC</h5>
                                             <div class="header__cart-item-price-wrap">
                                                 <span class="header__cart-item-price">3.990.000đ</span>
                                                 <span class="header__cart-item-multiply">x</span>
@@ -255,7 +260,7 @@
         </header>
 
         <div class="app__container">
-            <div class="grid">
+            <div class="grid wide">
                 <div class="grid__row app__content">
                     <div class="grid__column-2">
                         <nav class="category">
@@ -287,7 +292,7 @@
                     </div>
                     <div class="grid__column-10">
                         <!-- Filter -->
-                        <div class="home-filter">
+                        <div class="home-filter hide-on-mobile-tablet">
                             <span class="home-filter__label">Sắp xếp theo</span>
                             <button class="btn home-filter__btn btn--primary">Phổ Biến</button>
                             <button class="btn home-filter__btn">Mới Nhất</button>
@@ -800,7 +805,7 @@
         </div>
 
         <footer class="footer">
-            <div class="grid">
+            <div class="grid wide">
                 <div class="grid__row footer-link">
                     <div class="grid__column-2-4">
                         <h3 class="footer__heading">Chăm sóc khách hàng</h3>
@@ -1055,7 +1060,7 @@
                 </div>
             </div>
             <div class="footer-company-info">
-                <div class="grid">
+                <div class="grid wide">
                     <div class="footer__privacy-list">
                         <div class="footer__privacy-item">
                             <a href="#" class="footer__privacy-item-link">Chính sách bảo mật</a>
