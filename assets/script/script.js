@@ -26,6 +26,17 @@ function swichForms() {
     }
 }
 
+// function openCart() {
+//     if (document.querySelector('.header__cart-list').style.display == "block") {
+//         document.querySelector('.header__cart-list').style.display = "none";
+//     } else {
+//         document.querySelector('.header__cart-list').style.display = "block";
+//     }
+// }
+
+// function closeCart() { 
+//     document.querySelector('.header__cart-list').style.display = "none";
+// }
 
 // Cách pro hơn với jQuery
 // $(document).ready(function() {

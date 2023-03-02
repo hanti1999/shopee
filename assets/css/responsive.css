@@ -53,6 +53,17 @@
     .header__cart-item-name {
         max-width: 450px;
     }
+    .header__cart {
+        height: 40px;
+    }
+    .header__cart-btn {
+        height: 40px;
+        display: flex;
+        align-items: center;
+    }
+    .header__cart-notice {
+        top: -3px;
+    }
 }
 
 /* Mobile */
