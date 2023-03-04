@@ -24,6 +24,10 @@ html {
     box-sizing: border-box;
 }
 
+.app {
+    overflow: hidden;
+}
+
 /* Responsive */
 .grid__row {
     display: flex;
@@ -200,6 +204,7 @@ html {
     justify-content: center;
     align-items: center;
     list-style: none;
+    padding-left: 0;
 }
 
 .pagination-item {

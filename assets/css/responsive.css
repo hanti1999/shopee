@@ -112,4 +112,30 @@
         max-height: 150px;
         box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
     }
+    .pagination-item__link {
+        font-size: 1.6rem;
+        min-width: 36px;
+        --height: 28px;
+    }
+    .pagination-item {
+        margin: 0;
+    }
+    .app__content {
+        margin: 0 4px;
+    }
+    .home-product-item__price {
+        flex-direction: column;
+    }
+    .footer__privacy-list {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .footer__privacy-item {
+        padding: 8px 0;
+        border: none;
+    }
+    .footer-company-info {
+        padding-top: 37px;
+    }
 }
