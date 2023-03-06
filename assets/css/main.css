@@ -611,6 +611,10 @@
 
 .header__search-recommend {
     padding: 7px 0;
+    overflow: hidden;
+    max-width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .header__search-recommend-item {
@@ -625,6 +629,11 @@
     margin: 0px 70px;
     text-align: center;
     position: relative;
+}
+
+.header__logo,
+.header__cart-btn {
+    -webkit-tap-highlight-color: transparent;
 }
 
     /* hover show cart */
@@ -659,10 +668,6 @@
     animation: grow ease-in .2s;
     will-change: opacity, transform;
     z-index: 1;
-}
-
-.cart-btn {
-    display: none;
 }
 
 .header__cart-list::before {
@@ -867,6 +872,7 @@
 
 .header__sort-item--active .header__sort-link {
     color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
 }
 
 .header__sort-item:first-child .header__sort-link::before {
@@ -936,6 +942,68 @@
 .category-item__link:hover {
     right: -4px;
     color: var(--primary-color);
+}
+    /* mobile catagory */
+
+.mobile-category__list {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+.mobile-category__list::-webkit-scrollbar {
+    display: none;
+}
+
+.mobile-category__item {
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+.mobile-category__item:last-child {
+    margin-right: 0;
+}
+
+.mobile-category__item:nth-of-type(3n + 1) .mobile-category__link {
+    /* 
+    Giải thích: tạo chu kỳ gồm 3 phần tử (select 1 phần tử lần sau mỗi chu kỳ), khi +1 sẽ vượt quá kích 
+    thước chu kỳ (3) và quay lại select phần tử đầu tiên của chu kỳ đó
+
+    an + b
+    a: kích thước chu kỳ (nếu không có tham số b, sẽ select vị trí thứ a của chu kỳ)
+    n: là số tự nhiên (0 trở đi)
+    b: là số nguyên (có cả số âm)
+    */
+    background-color: #87afd8;
+}
+
+.mobile-category__item:nth-of-type(3n + 2) .mobile-category__link {
+    background-color: #76c9bd;
+}
+
+.mobile-category__item:nth-of-type(3n + 3) .mobile-category__link {
+    background-color: #88CF81;
+}
+
+.mobile-category__link {
+    --line-height: 2rem;
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.4rem;
+    line-height: var(--line-height);
+    text-align: center;
+    width: 110px;
+    height: calc(var(--line-height) * 2);
+    display: block;
+    border-radius: 4px;
+    font-weight: 300;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+   	-webkit-line-clamp: 2;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
     /* home - filter */
