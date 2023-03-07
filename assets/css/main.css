@@ -631,6 +631,11 @@
     margin: 0px 70px;
     text-align: center;
     position: relative;
+    display: block;
+}
+
+.header__cart-checkbox:checked ~ .header__cart-list {
+    display: block;
 }
 
 .header__logo,
@@ -639,10 +644,6 @@
 }
 
     /* hover show cart */
-.header__cart:hover .header__cart-list {
-    display: block;
-}
-
 .header__cart-notice {
     position: absolute;
     padding: 1px 7px;
