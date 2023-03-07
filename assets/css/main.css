@@ -519,6 +519,8 @@
 
 .header__logo {
     width: 195px;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 .header__logo-link {
@@ -653,6 +655,8 @@
     top: -10px;
     left: 15px;
     cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 .header__cart-list {
@@ -945,6 +949,10 @@
 }
     /* mobile catagory */
 
+.mobile-category {
+    display: none;
+}
+
 .mobile-category__list {
     display: flex;
     list-style: none;
@@ -1004,6 +1012,7 @@
    	-webkit-line-clamp: 2;
     user-select: none;
     -webkit-user-select: none;
+    padding: 0 6px;
 }
 
     /* home - filter */
